@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- More About Me Page of Adam Tao website -->
+<head>
+  <title>More About Me</title>
+  <link rel="stylesheet" href="css/MAMStyles.css">
+</head>
+
+<body>
+  <script>
+  var des1 = "Eminem is my favorite rapper. Fav song: mockingbird.";
+  var des2 = "Ball is life. Favorite player is LeBron.";
+  var des3 = "C is the first coding language I learned, but now I use Python more frequently.";
+  var des4 = "I am native in mandarin, fluent in English, and capable of French.";
+  var des5 = "Maugham is my favorite writer. I was influenced a lot by The Moon and Sixpence.";
+  var des6 = "I will tell you if you " + "email".link("mailto:adamtao@berkeley.edu") + " me."
+  var description = [des1, des2, des3, des4, des5, des6];
+
+  function expand(x, num) {
+    x.style.height = "150px";
+    x.style.width = "150px";
+    document.getElementById("projectDescription" + num).innerHTML =
+      description[parseInt(num) - 1];
+  }
+
+  function collapse(x, num) {
+    x.style.height = "70px";
+    x.style.width = "150px";
+    document.getElementById("projectDescription" + num).innerHTML = '';
+  }
+  </script>
+
+  <div class="bar">
+    <div class="navigation">
+      <a href="home.html"> Home</a>
+      &nbsp;&nbsp;
+      <a href="projects.html"> Projects</a>
+      &nbsp;&nbsp;
+      <a href="moreAboutMe.html"> More about me</a>
+      &nbsp;&nbsp;
+      <a href="files/resume.pdf"> Resume</a>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="copyright">
+      <p> Adam Tao &#169; 2018 </p>
+    </div>
+  </div>
+
+  <div class="photo">
+    <img src="images/moreAboutMe.jpg" height="720" width="640">
+  </div>
+
+  <div class="project1" onmouseover="expand(this, '1')" onmouseleave="collapse(this, '1')">
+    <div class="projectText">
+      Eminem
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription1">
+    </div>
+  </div>
+
+  <div class="project2" onmouseover="expand(this, '2')" onmouseleave="collapse(this, '2')">
+    <div class="projectText">
+      Basketball
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription2">
+    </div>
+  </div>
+
+  <div class="project3" onmouseover="expand(this, '3')" onmouseleave="collapse(this, '3')">
+    <div class="projectText">
+      C
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription3">
+    </div>
+  </div>
+
+  <div class="project4" onmouseover="expand(this, '4')" onmouseleave="collapse(this, '4')">
+    <div class="projectText">
+        Trilingual
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription4">
+    </div>
+  </div>
+
+  <div class="project5" onmouseover="expand(this, '5')" onmouseleave="collapse(this, '5')">
+    <div class="projectText">
+      Sormerset Maugham
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription5">
+    </div>
+  </div>
+
+  <div class="project6" onmouseover="expand(this, '6')" onmouseleave="collapse(this, '6')">
+    <div class="projectText">
+      Biggest Secret
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription6">
+    </div>
+  </div>
+
+</body>
+</html>

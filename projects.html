@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Project Page of Adam Tao website -->
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/projectStyles.css">
+</head>
+
+<body>
+  <script>
+  var des1 = "With researchers from " +
+              "Berkeley Institute of Data Science".link("https://bids.berkeley.edu/") +
+              ", I use Convolutional Neural Network to distinguish health brain \
+              MRI images and those with tumors.";
+  var des2 = "With researchers from " +
+              "MIT Lab of Computational Biology and Biophysics".link("http://lcbb.mit.edu/") +
+              ", I create a top-down algorithm for primer design of asymmetric " +
+              "polymerase chain reaction".link("https://en.wikipedia.org/wiki/Polymerase_chain_reaction") +
+              ". I also design\
+               DNA data storage indexing sequences using special hash functions.";
+  var des3 = "I modify Grey Prediction Model to predict \
+              the clean energy consumption in states in US. The model is \
+              trained with data from past 20 years with an accuracy of above 95%. Code can be find " +
+              "here".link("https://github.com/adamtau/Clean-Energy-Consumption-Prediction-Model") + ".";
+  var des4 = "With " +
+             "School of Life Science of Fudan University".link("http://life.fudan.edu.cn/") +
+             ", I provide a faster and cheaper method of DNA computing by constructing \
+             comprehensive calculation algorithms using DNA strands.";
+  var des5 = "I construct a web crawler to quickly crawl Berkeley Academic Guide for courses that are \
+              related to the keyword, giving a more accurate and cleaner result than the school provided engine."
+  var description = [des1, des2, des3, des4, des5];
+
+  function expand(x, num) {
+    x.style.height = "350px";
+    x.style.width = "350px";
+    document.getElementById("projectDescription" + num).innerHTML =
+      description[parseInt(num) - 1];
+  }
+
+  function collapse(x, num) {
+    x.style.height = "250px";
+    x.style.width = "250px";
+    document.getElementById("projectDescription" + num).innerHTML = '';
+  }
+  </script>
+
+  <div class="bar">
+    <div class="navigation">
+      <a href="home.html"> Home</a>
+      &nbsp;&nbsp;
+      <a href="projects.html"> Projects</a>
+      &nbsp;&nbsp;
+      <a href="moreAboutMe.html"> More about me</a>
+      &nbsp;&nbsp;
+      <a href="files/resume.pdf"> Resume</a>
+    </div>
+  </div>
+
+  <div class="project1" onmouseover="expand(this, '1')" onmouseleave="collapse(this, '1')">
+    <div class="projectText">
+      Brain Tumor Recognition Using Deep Learning
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription1">
+    </div>
+  </div>
+
+  <div class="project2" onmouseover="expand(this, '2')" onmouseleave="collapse(this, '2')">
+    <div class="projectText">
+      <a href="files/primerDesign.pdf">
+        Primer Design for DNA Nanotechnology
+      </a>
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription2">
+    </div>
+  </div>
+
+  <div class="project3" onmouseover="expand(this, '3')" onmouseleave="collapse(this, '3')">
+    <div class="projectText">
+      <a href="files/GreenEnergyPrediction.pdf">
+        Math Model for Clean Energy Prediction
+      </a>
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription3">
+    </div>
+  </div>
+
+  <div class="project4" onmouseover="expand(this, '4')" onmouseleave="collapse(this, '4')">
+    <div class="projectText">
+        A Universal DNA Computing Method
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription4">
+    </div>
+  </div>
+
+  <div class="project5" onmouseover="expand(this, '5')" onmouseleave="collapse(this, '5')">
+    <div class="projectText">
+      <a href="https://github.com/adamtau/Berkeley-courses-finder">
+        Berkeley Course Finder
+      </a>
+    </div>
+    <br>
+    <div class="projectDescription" id="projectDescription5">
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="copyright">
+      <p> Adam Tao &#169; 2018 </p>
+    </div>
+  </div>
+</body>
+
+</html>
