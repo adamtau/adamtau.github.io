@@ -96,12 +96,13 @@ ul {
 
 .project1 {
   position: absolute;
+  align-self: center;
   top: 27%;
   left: 38%;
   height: 250px;
   width: 250px;
-  border: 20px solid #31f759;
-  background-color: #31f759;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 
@@ -111,8 +112,8 @@ ul {
   left: 63%;
   height: 250px;
   width: 250px;
-  border: 25px solid #02cef7;
-  background-color: #02cef7;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 
@@ -122,8 +123,8 @@ ul {
   left: 68%;
   height: 250px;
   width: 250px;
-  border: 30px solid #dc7af4;
-  background-color: #dc7af4;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 
@@ -133,8 +134,8 @@ ul {
   left: 14%;
   height: 250px;
   width: 250px;
-  border: 15px solid #f9a2d6;
-  background-color: #f9a2d6;
+  border: 15px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 
@@ -144,7 +145,7 @@ ul {
   left: 10%;
   height: 250px;
   width: 250px;
-  border: 10px solid #ffd170;
-  background-color: #ffd170;
+  border: 10px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
