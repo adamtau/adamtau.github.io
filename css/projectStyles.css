@@ -79,6 +79,10 @@ ul {
   line-height: 150%;
 }
 
+#tooMuchText {
+  margin-top: 10%;
+}
+
 .projectDescription a:link {
   color: white;
   text-decoration: underline;
@@ -108,8 +112,8 @@ ul {
 
 .project2 {
   position: absolute;
-  top: 66%;
-  left: 63%;
+  top: 13%;
+  left: 68%;
   height: 250px;
   width: 250px;
   border: 10px solid rgba(0, 0, 0, 0.5);
@@ -119,8 +123,8 @@ ul {
 
 .project3 {
   position: absolute;
-  top: 13%;
-  left: 68%;
+  top: 66%;
+  left: 63%;
   height: 250px;
   width: 250px;
   border: 10px solid rgba(0, 0, 0, 0.5);
